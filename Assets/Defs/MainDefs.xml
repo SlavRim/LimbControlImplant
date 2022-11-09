@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<NeuralInterceptMatrix.ImplantThingDef ParentName="BodyPartProstheticBase">
+		<label>neural intercept matrix</label>
+		<description>An NIM at the base of the neck that intercepts the signals from the nervous system to prevent the usage of the subject's arms and legs.\nThe device is only tuned to the nervous system of humanlikes.</description>
+		<statBases>
+			<Mass>0.1</Mass>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<costList>
+			<Steel>30</Steel>
+			<Plasteel>15</Plasteel>
+			<Gold>10</Gold>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<researchPrerequisite>BrainWiring</researchPrerequisite>
+		</recipeMaker>
+	</NeuralInterceptMatrix.ImplantThingDef>
+
+	<NeuralInterceptMatrix.ImplantHediffDef>
+		<label>neural intercept matrix</label>
+		<description>An NIM at the base of the neck that intercepts the signals from the nervous system to prevent the usage of the subject's arms and legs.</description>
+	</NeuralInterceptMatrix.ImplantHediffDef>
+	
+	<NeuralInterceptMatrix.DisabilityHediffDef>
+		<label>disability</label>
+		<description>Disabled body part.</description>
+	</NeuralInterceptMatrix.DisabilityHediffDef>
+
+	<NeuralInterceptMatrix.ImplantState_Properties>
+		<toggleIconPath>Things/Item/Health/HealthItem</toggleIconPath>
+	</NeuralInterceptMatrix.ImplantState_Properties>
+	
+</Defs>

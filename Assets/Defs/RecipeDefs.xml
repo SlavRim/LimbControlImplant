@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<RecipeDef Name="ImplantSurgeryBase" Abstract="true">
+		<workAmount>1500</workAmount>
+		<surgerySuccessChanceFactor>0.99</surgerySuccessChanceFactor>
+		<deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
+		<researchPrerequisite>BrainWiring</researchPrerequisite>
+	</RecipeDef>
+
+	<NeuralInterceptMatrix.Recipes.ImplantInstallSurgery ParentName="ImplantSurgeryBase">
+		<label>install neural intercept matrix</label>
+		<description>Installs NIM.</description>
+		<jobString>Installing NIM.</jobString>
+
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<!--
+			-->
+			<li>
+				<filter>
+					<thingDefs>
+						<li>NIM_Implant</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<!--
+			-->
+			<thingDefs>
+				<li>NIM_Implant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</NeuralInterceptMatrix.Recipes.ImplantInstallSurgery>
+
+	<NeuralInterceptMatrix.Recipes.ImplantRemoveSurgery ParentName="ImplantSurgeryBase">
+		<label>remove neural intercept matrix</label>
+		<description>Removes NIM.</description>
+		<jobString>Removing NIM.</jobString>
+	</NeuralInterceptMatrix.Recipes.ImplantRemoveSurgery>
+
+</Defs>

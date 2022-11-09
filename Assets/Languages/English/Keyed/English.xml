@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<ImplantToggleLabel>Toggle {0}({1})</ImplantToggleLabel>
+	<ImplantToggleDescription>Toggles {0} to state {1}.</ImplantToggleDescription>
+
+	<EnterToggleLabel>Entered\n({1})</EnterToggleLabel>
+	<EnterToggleDescription>Toggle on enter to: {1}.</EnterToggleDescription>
+	
+	<ExitToggleLabel>Exited\n({1})</ExitToggleLabel>
+	<ExitToggleDescription>Toggle on exit to: {1}.</ExitToggleDescription>
+
+	<ResizeIncreaseToggleLabel>Increase radius\n(+1)</ResizeIncreaseToggleLabel>
+	<ResizeIncreaseToggleDescription>Current radius: {0} cells.</ResizeIncreaseToggleDescription>
+
+	<ResizeDecreaseToggleLabel>Decrease radius\n(-1)</ResizeDecreaseToggleLabel>
+	<ResizeDecreaseToggleDescription>Current radius: {0} cells.</ResizeDecreaseToggleDescription>
+	
+	<State_Disabled>Disabled</State_Disabled>
+	<State_Arms>Arms</State_Arms>
+	<State_Legs>Legs</State_Legs>
+</LanguageData>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<NIM_Implant.label>NIM</NIM_Implant.label>
+	<NIM_Implant.description>Матрица нейронного перехвата у основания шеи, которая перехватывает сигналы нервной системы, чтобы предотвратить использование рук и ног субъекта.\nМожет быть установлена только человекоподобному существу.</NIM_Implant.description>
+	
+	<NIM_FenceBuilding.label>NIМ Ограда</NIM_FenceBuilding.label>
+	<NIM_FenceBuilding.description>Радиопередающая ограда ближнего действия, скрытая под поверхностью, используется для автоматического взаимодействия с NIM в пространстве прямо над ней.</NIM_FenceBuilding.description>
+
+	<NIM_TowerBuilding.label>NIM Башня</NIM_TowerBuilding.label>
+	<NIM_TowerBuilding.description>Радио-башня, используется для автоматического взаимодействия с локальными NIM.</NIM_TowerBuilding.description>
+</LanguageData>

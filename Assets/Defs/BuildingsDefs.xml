@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<NeuralInterceptMatrix.Buildings.BaseBuilding.Def Name="NIM_BuildableBase" Abstract="True">
+		<category>Building</category>
+		<soundImpactDefault>MetalHitImportant</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<constructEffect>ConstructMetal</constructEffect>
+		<repairEffect>ConstructMetal</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
+	</NeuralInterceptMatrix.Buildings.BaseBuilding.Def>
+
+	<NeuralInterceptMatrix.Buildings.FenceDef ParentName="NIM_BuildableBase">
+		<label>N.I.M. Security Fence</label>
+		<description>A short-range radio-control fenceline buried beneath the surface used to automatically interface with implanted Neural Intercept Matrices in the space directly above.</description>
+
+		<uiIconPath>Things/Building/Linked/PowerConduit_MenuIcon</uiIconPath>
+		<uiIconScale>0.7</uiIconScale>
+		<graphicData>
+			<texPath>Things/Building/Linked/NIM_Fence_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Transmitter</linkType>
+			<linkFlags>
+				<li>PowerConduit</li>
+			</linkFlags>
+			<damageData>
+				<rect>(0,0.35,1,0.3)</rect>
+			</damageData>
+		</graphicData>
+
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<isInert>true</isInert>
+			<isEdifice>false</isEdifice>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/NIM_Fence_OverlayAtlas</texPath>
+			</blueprintGraphicData>
+		</building>
+		<drawerType>MapMeshOnly</drawerType>
+		<rotatable>false</rotatable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<costList>
+			<Steel>6</Steel>
+			<Plasteel>2</Plasteel>
+		</costList>
+		<statBases>
+			<MaxHitPoints>10</MaxHitPoints>
+			<Beauty>0</Beauty>
+			<WorkToBuild>10</WorkToBuild>
+			<Flammability>0.1</Flammability>
+		</statBases>
+		<passability>Standable</passability>
+		<altitudeLayer>Conduits</altitudeLayer>
+		<castEdgeShadows>false</castEdgeShadows>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<transmitsPower>true</transmitsPower>
+				<basePowerConsumption>10</basePowerConsumption>
+			</li>
+		</comps>
+	</NeuralInterceptMatrix.Buildings.FenceDef>
+
+	<NeuralInterceptMatrix.Buildings.TowerDef ParentName="NIM_BuildableBase">
+		<label>N.I.M. Control Tower</label>
+		<description>A radio-control tower used to automatically interface with local implanted Neural Intercept Matrices. </description>
+
+		<size>(3,3)</size>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		
+		<DefaultRadius>10</DefaultRadius>
+		<RadiusMin>3</RadiusMin>
+		<RadiusMax>52</RadiusMax>
+		<TilePower>0.5</TilePower>
+
+		<graphicData>
+			<texPath>Things/Building/Security/NIM_Tower</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,8)</drawSize>
+			<drawOffset>(0,0,3)</drawOffset>
+		</graphicData>
+
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<isInert>true</isInert>
+			<isEdifice>false</isEdifice>
+		</building>
+
+		<rotatable>false</rotatable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<designationCategory>Security</designationCategory>
+		<costList>
+			<Steel>80</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Beauty>-20</Beauty>
+			<WorkToBuild>10</WorkToBuild>
+			<Flammability>0.1</Flammability>
+		</statBases>
+		<pathCost>1000</pathCost>
+		<passability>Impassable</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.9</fillPercent>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>500</basePowerConsumption>
+			</li>
+		</comps>
+	</NeuralInterceptMatrix.Buildings.TowerDef>
+</Defs>

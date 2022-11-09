@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<NIM_ImplantHediff.label>NIM</NIM_ImplantHediff.label>
+	<NIM_ImplantHediff.description>NIM у основания шеи, который перехватывает сигналы нервной системы, чтобы предотвратить использование рук и ног субъекта.</NIM_ImplantHediff.description>
+
+	<NIM_DisabilityHediff.label>Паралич</NIM_DisabilityHediff.label>
+	<NIM_DisabilityHediff.description>Конечность парализована.</NIM_DisabilityHediff.description>
+</LanguageData>

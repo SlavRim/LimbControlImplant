@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<ImplantToggleLabel>Переключить {0}({1})</ImplantToggleLabel>
+	<ImplantToggleDescription>Переключает {0} на {1}.</ImplantToggleDescription>
+
+	<EnterToggleLabel>При входе\n({1})</EnterToggleLabel>
+	<EnterToggleDescription>При входе переключать на: {1}.</EnterToggleDescription>
+	
+	<ExitToggleLabel>При выходе\n({1})</ExitToggleLabel>
+	<ExitToggleDescription>При выходе переключать на: {1}.</ExitToggleDescription>
+
+	<ResizeIncreaseToggleLabel>Увеличить радиус\n(+1)</ResizeIncreaseToggleLabel>
+	<ResizeIncreaseToggleDescription>Текущий радиус: {0} клеток.</ResizeIncreaseToggleDescription>
+
+	<ResizeDecreaseToggleLabel>Уменьшить радиус\n(-1)</ResizeDecreaseToggleLabel>
+	<ResizeDecreaseToggleDescription>Текущий радиус: {0} клеток.</ResizeDecreaseToggleDescription>
+	
+	<State_Disabled>Выкл.</State_Disabled>
+	<State_Arms>Руки</State_Arms>
+	<State_Legs>Ноги</State_Legs>
+</LanguageData>

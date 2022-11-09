@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+	<NIM_ImplantInstall.label>установить NIM</NIM_ImplantInstall.label>
+	<NIM_ImplantInstall.description>Установить NIM.</NIM_ImplantInstall.description>
+	<NIM_ImplantInstall.jobString>Устанавливает NIM.</NIM_ImplantInstall.jobString>
+
+	<NIM_ImplantRemove.label>извлечь NIM</NIM_ImplantRemove.label>
+	<NIM_ImplantRemove.description>Извлекает NIM.</NIM_ImplantRemove.description>
+	<NIM_ImplantRemove.jobString>Извлекает NIM.</NIM_ImplantRemove.jobString>
+</LanguageData>
