@@ -8,7 +8,7 @@ public abstract class ImplantSurgery : RecipeDef
         recipeUsers = new() { ThingDefOf.Human };
         appliedOnFixedBodyParts = new()
         {
-            BodyPartDefOf.Neck
+            Defs.Neck
         };
         descriptionHyperlinks = Defs.Hyperlinks;
     }

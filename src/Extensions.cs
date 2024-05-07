@@ -6,10 +6,10 @@ public static partial class Extensions
     public static ImplantHediff TryGetImplant(this Pawn pawn)
     {
         var hediffSet = pawn?.health.hediffSet;
-#if v1_4
-        var NIM = hediffSet?.GetFirstHediff<ImplantHediff>();
-#else
+#if v1_3
         var NIM = hediffSet?.GetHediffs<ImplantHediff>().FirstOrDefault();
+#else
+        var NIM = hediffSet?.GetFirstHediff<ImplantHediff>();
 #endif
         return NIM;
     }

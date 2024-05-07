@@ -3,4 +3,7 @@
 namespace NeuralInterceptMatrix;
 
 [DefOf]
-public static partial class Definitions { }
+public static partial class Definitions
+{
+    public static BodyPartDef Neck;
+}
