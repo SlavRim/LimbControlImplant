@@ -48,16 +48,16 @@ public partial class ImplantHediff : Hediff_Implant
     {
         get
         {
-#if v1_4
-            List<DisabilityHediff> hediffs = new();
-            Health.hediffSet.GetHediffs<DisabilityHediff>(ref hediffs);
-            return disabilities
-                .Concat(hediffs)
-                .Distinct();
-#else
+#if v1_3
             return disabilities
                 .Concat(Health.hediffSet.GetHediffs<DisabilityHediff>())
                 .Distinct();
+#else
+            List<DisabilityHediff> hediffs = new();
+                        Health.hediffSet.GetHediffs<DisabilityHediff>(ref hediffs);
+                        return disabilities
+                            .Concat(hediffs)
+                            .Distinct();
 #endif
         }
     }
